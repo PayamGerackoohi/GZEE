@@ -83,31 +83,38 @@
 |:-------:|:------:|
 | 9?, 10? | 17, 18 |
 
-# Busbar Protection (230kV)
+## Busbar Protection (230kV)
 | DC+    | DC-    | I RSTN         | Trip+- |
 |:------:|:------:|:--------------:|:------:|
 | 17, 19 | 21, 25 | 18, 20, 22, 26 | 6, 2   |
 
-# Busbar Protection (63kV/61BusA) (=F0+R19)
+## Busbar Protection (63kV/61BusA) (=F0+R19)
 
-# Busbar Protection (63kV/62BusB) (=F10+R19)
-## High Impedance B (F87B)
-### -X87B
+## Busbar Protection (63kV/62BusB) (=F10+R19)
+### High Impedance B (F87B)
+- -X87B
 | DC+    | DC-    | I RSTN         | Trip+- |
 |:------:|:------:|:--------------:|:------:|
 | 13, 14 | 15, 16 | 18, 20, 22, 26 | 12, 4  |
 
-## EF (F87BE)
-### -X87B
+### EF (F87BE)
+- -X87B
 | DC+    | DC-    | I RN   | Trip+- |
 |:------:|:------:|:------:|:------:|
 | 13, 14 | 15, 16 | 24, 28 | 12, 4  |
 
-## Current Supervision (F88B)
-### -X87B
+### Current Supervision (F88B)
+- -X87B
 | DC+    | DC-    | V RSTN         | Trip+- |
 |:------:|:------:|:--------------:|:------:|
 | 13, 14 | 15, 16 | 18, 20, 22, 26 | 25, 17 |
+
+## منطقه آزاد 1 (=F18+R25)
+### Distance
+
+|:-------:|:-------:|:-------:|:-------:|
+| V RSTN  | I RSTN  | Trip+    | Trip-  |
+| 700-703 | 800-803 | F21A.002 | F21.32 |
 
 # جنوب رشت
 ### =F5+R2
