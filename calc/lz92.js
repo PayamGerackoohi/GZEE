@@ -2,14 +2,22 @@
  * Distance LZ92
 */
 const
+    /**
+     * Udc: [48, 60] => In = 1
+     * Udc: [110, 250] => In = 5
+     */
     In = 1,
+    /**
+     * Un: [100, 130] => H = 1
+     * Un: [200, 260] => H = 2
+     */
     H = 1,
-    _m1 = 3,
+    _m1 = 2,
     _m2 = 2,
-    _m3 = 3,
-    n1 = 85,
-    n2 = 11,
-    n3 = 87,
+    _m3 = 2,
+    n1 = 13,
+    n2 = 15,
+    n3 = 10,
     line_angle = 68 // degree
 
 const r_x = 1 / Math.tan(line_angle * Math.PI / 180)
@@ -47,3 +55,8 @@ function toPolar(r, x) {
     const deg = Math.atan2(r, x) * 180 / Math.PI
     return `${rr.toFixed(3)} ∠ ${deg.toFixed(1)}°`
 }
+/*
+ + j= 4.148 ∠ 68.0°
+2.694 + j6.667 = 7.190 ∠ 68.0°
+4.040 + j10.000 = 10.785 ∠ 68.0°
+*/
